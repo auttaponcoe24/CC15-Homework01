@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        div {
+            margin: 1em;
+            padding: 2em;
+            border: 1px solid black;
+            border-radius: 1em;
+            width: 400px;
+        }
+
+        input, select {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="./index.html">Home</a> |
+        <a href="./education.html">Education</a> |
+        <a href="./work.html">Work Experience</a> |
+        <a href="./contact.html">Contact Me</a> |
+    </nav>
+    <hr>
+
+    <h1>Contact Me</h1>
+
+    <div>
+        <p>Enter your info..</p>
+        <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+            <label for="fname">Your Name</label><br>
+            <input type="text" id="fname" name="fname" value=""><br><br>
+
+            <label for="email">Your E-mail:</label><br>
+            <input type="email" id="email" name="email" value=""><br><br>
+
+            <label for="genders">Gender</label><br>
+            <select id="genders" name="genders">
+                <option hidden value="">select..</option>
+                <option value="male">male</option>
+                <option value="female">female</option>
+            </select><br><br>
+
+            <label for="message">Message</label><br>
+            <textarea name="message" rows="10" cols="30"></textarea><br><br>
+
+            <button type="submit" value="Submit">Submit</button>
+            <button type="reset" value="Clear">Clear</button>
+
+          </form> 
+    </div>
+</body>
+</html>
